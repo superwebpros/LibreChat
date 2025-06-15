@@ -8,6 +8,7 @@
     "packages/*"
   ],
   "scripts": {
+    "sync:qdrant": "node sync-qdrant.js",
     "update": "node config/update.js",
     "add-balance": "node config/add-balance.js",
     "set-balance": "node config/set-balance.js",
@@ -141,5 +142,10 @@
       "admin/",
       "packages/"
     ]
+  },
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.14.1",
+    "dotenv": "^16.5.0",
+    "langchain": "^0.3.28"
   }
 }
